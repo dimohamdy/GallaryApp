@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DC4EF7E213B90C300708E2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4EF7D213B90C300708E2D /* AppDelegate.swift */; };
+		3DC4EF80213B90C300708E2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4EF7F213B90C300708E2D /* ViewController.swift */; };
+		3DC4EF83213B90C300708E2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC4EF81213B90C300708E2D /* Main.storyboard */; };
+		3DC4EF85213B90C500708E2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC4EF84213B90C500708E2D /* Assets.xcassets */; };
+		3DC4EF88213B90C500708E2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC4EF86213B90C500708E2D /* LaunchScreen.storyboard */; };
+		3DC4EF93213B90C500708E2D /* GallaryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4EF92213B90C500708E2D /* GallaryAppTests.swift */; };
+		3DC4EF9E213B90C500708E2D /* GallaryAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4EF9D213B90C500708E2D /* GallaryAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DC4EF8F213B90C500708E2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DC4EF72213B90C300708E2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DC4EF79213B90C300708E2D;
+			remoteInfo = GallaryApp;
+		};
+		3DC4EF9A213B90C500708E2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DC4EF72213B90C300708E2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DC4EF79213B90C300708E2D;
+			remoteInfo = GallaryApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DC4EF7A213B90C300708E2D /* GallaryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GallaryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC4EF7D213B90C300708E2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DC4EF7F213B90C300708E2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DC4EF82213B90C300708E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DC4EF84213B90C500708E2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DC4EF87213B90C500708E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DC4EF89213B90C500708E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DC4EF8E213B90C500708E2D /* GallaryAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GallaryAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC4EF92213B90C500708E2D /* GallaryAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryAppTests.swift; sourceTree = "<group>"; };
+		3DC4EF94213B90C500708E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DC4EF99213B90C500708E2D /* GallaryAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GallaryAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC4EF9D213B90C500708E2D /* GallaryAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryAppUITests.swift; sourceTree = "<group>"; };
+		3DC4EF9F213B90C500708E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DC4EF77213B90C300708E2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC4EF8B213B90C500708E2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC4EF96213B90C500708E2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DC4EF71213B90C300708E2D = {
+			isa = PBXGroup;
+			children = (
+				3DC4EF7C213B90C300708E2D /* GallaryApp */,
+				3DC4EF91213B90C500708E2D /* GallaryAppTests */,
+				3DC4EF9C213B90C500708E2D /* GallaryAppUITests */,
+				3DC4EF7B213B90C300708E2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DC4EF7B213B90C300708E2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DC4EF7A213B90C300708E2D /* GallaryApp.app */,
+				3DC4EF8E213B90C500708E2D /* GallaryAppTests.xctest */,
+				3DC4EF99213B90C500708E2D /* GallaryAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DC4EF7C213B90C300708E2D /* GallaryApp */ = {
+			isa = PBXGroup;
+			children = (
+				3DC4EF7D213B90C300708E2D /* AppDelegate.swift */,
+				3DC4EF7F213B90C300708E2D /* ViewController.swift */,
+				3DC4EF81213B90C300708E2D /* Main.storyboard */,
+				3DC4EF84213B90C500708E2D /* Assets.xcassets */,
+				3DC4EF86213B90C500708E2D /* LaunchScreen.storyboard */,
+				3DC4EF89213B90C500708E2D /* Info.plist */,
+			);
+			path = GallaryApp;
+			sourceTree = "<group>";
+		};
+		3DC4EF91213B90C500708E2D /* GallaryAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DC4EF92213B90C500708E2D /* GallaryAppTests.swift */,
+				3DC4EF94213B90C500708E2D /* Info.plist */,
+			);
+			path = GallaryAppTests;
+			sourceTree = "<group>";
+		};
+		3DC4EF9C213B90C500708E2D /* GallaryAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3DC4EF9D213B90C500708E2D /* GallaryAppUITests.swift */,
+				3DC4EF9F213B90C500708E2D /* Info.plist */,
+			);
+			path = GallaryAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DC4EF79213B90C300708E2D /* GallaryApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC4EFA2213B90C500708E2D /* Build configuration list for PBXNativeTarget "GallaryApp" */;
+			buildPhases = (
+				3DC4EF76213B90C300708E2D /* Sources */,
+				3DC4EF77213B90C300708E2D /* Frameworks */,
+				3DC4EF78213B90C300708E2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GallaryApp;
+			productName = GallaryApp;
+			productReference = 3DC4EF7A213B90C300708E2D /* GallaryApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DC4EF8D213B90C500708E2D /* GallaryAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC4EFA5213B90C500708E2D /* Build configuration list for PBXNativeTarget "GallaryAppTests" */;
+			buildPhases = (
+				3DC4EF8A213B90C500708E2D /* Sources */,
+				3DC4EF8B213B90C500708E2D /* Frameworks */,
+				3DC4EF8C213B90C500708E2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DC4EF90213B90C500708E2D /* PBXTargetDependency */,
+			);
+			name = GallaryAppTests;
+			productName = GallaryAppTests;
+			productReference = 3DC4EF8E213B90C500708E2D /* GallaryAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3DC4EF98213B90C500708E2D /* GallaryAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC4EFA8213B90C500708E2D /* Build configuration list for PBXNativeTarget "GallaryAppUITests" */;
+			buildPhases = (
+				3DC4EF95213B90C500708E2D /* Sources */,
+				3DC4EF96213B90C500708E2D /* Frameworks */,
+				3DC4EF97213B90C500708E2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DC4EF9B213B90C500708E2D /* PBXTargetDependency */,
+			);
+			name = GallaryAppUITests;
+			productName = GallaryAppUITests;
+			productReference = 3DC4EF99213B90C500708E2D /* GallaryAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DC4EF72213B90C300708E2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = BinaryBoy;
+				TargetAttributes = {
+					3DC4EF79213B90C300708E2D = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					3DC4EF8D213B90C500708E2D = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 3DC4EF79213B90C300708E2D;
+					};
+					3DC4EF98213B90C500708E2D = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 3DC4EF79213B90C300708E2D;
+					};
+				};
+			};
+			buildConfigurationList = 3DC4EF75213B90C300708E2D /* Build configuration list for PBXProject "GallaryApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DC4EF71213B90C300708E2D;
+			productRefGroup = 3DC4EF7B213B90C300708E2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DC4EF79213B90C300708E2D /* GallaryApp */,
+				3DC4EF8D213B90C500708E2D /* GallaryAppTests */,
+				3DC4EF98213B90C500708E2D /* GallaryAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DC4EF78213B90C300708E2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC4EF88213B90C500708E2D /* LaunchScreen.storyboard in Resources */,
+				3DC4EF85213B90C500708E2D /* Assets.xcassets in Resources */,
+				3DC4EF83213B90C300708E2D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC4EF8C213B90C500708E2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC4EF97213B90C500708E2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DC4EF76213B90C300708E2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC4EF80213B90C300708E2D /* ViewController.swift in Sources */,
+				3DC4EF7E213B90C300708E2D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC4EF8A213B90C500708E2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC4EF93213B90C500708E2D /* GallaryAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC4EF95213B90C500708E2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC4EF9E213B90C500708E2D /* GallaryAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DC4EF90213B90C500708E2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DC4EF79213B90C300708E2D /* GallaryApp */;
+			targetProxy = 3DC4EF8F213B90C500708E2D /* PBXContainerItemProxy */;
+		};
+		3DC4EF9B213B90C500708E2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DC4EF79213B90C300708E2D /* GallaryApp */;
+			targetProxy = 3DC4EF9A213B90C500708E2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DC4EF81213B90C300708E2D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DC4EF82213B90C300708E2D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DC4EF86213B90C500708E2D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DC4EF87213B90C500708E2D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DC4EFA0213B90C500708E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DC4EFA1213B90C500708E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DC4EFA3213B90C500708E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7QH458A3QD;
+				INFOPLIST_FILE = GallaryApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dimo.hamdy.GallaryApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DC4EFA4213B90C500708E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7QH458A3QD;
+				INFOPLIST_FILE = GallaryApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dimo.hamdy.GallaryApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3DC4EFA6213B90C500708E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7QH458A3QD;
+				INFOPLIST_FILE = GallaryAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dimo.hamdy.GallaryAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GallaryApp.app/GallaryApp";
+			};
+			name = Debug;
+		};
+		3DC4EFA7213B90C500708E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7QH458A3QD;
+				INFOPLIST_FILE = GallaryAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dimo.hamdy.GallaryAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GallaryApp.app/GallaryApp";
+			};
+			name = Release;
+		};
+		3DC4EFA9213B90C500708E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7QH458A3QD;
+				INFOPLIST_FILE = GallaryAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dimo.hamdy.GallaryAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GallaryApp;
+			};
+			name = Debug;
+		};
+		3DC4EFAA213B90C500708E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7QH458A3QD;
+				INFOPLIST_FILE = GallaryAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dimo.hamdy.GallaryAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GallaryApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DC4EF75213B90C300708E2D /* Build configuration list for PBXProject "GallaryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC4EFA0213B90C500708E2D /* Debug */,
+				3DC4EFA1213B90C500708E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC4EFA2213B90C500708E2D /* Build configuration list for PBXNativeTarget "GallaryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC4EFA3213B90C500708E2D /* Debug */,
+				3DC4EFA4213B90C500708E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC4EFA5213B90C500708E2D /* Build configuration list for PBXNativeTarget "GallaryAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC4EFA6213B90C500708E2D /* Debug */,
+				3DC4EFA7213B90C500708E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC4EFA8213B90C500708E2D /* Build configuration list for PBXNativeTarget "GallaryAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC4EFA9213B90C500708E2D /* Debug */,
+				3DC4EFAA213B90C500708E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DC4EF72213B90C300708E2D /* Project object */;
+}
