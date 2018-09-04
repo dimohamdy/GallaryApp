@@ -17,6 +17,6 @@ enum API : String {
         return API.domain + self.rawValue
     }
 
-    static let domain:String = "http://10.0.0.30:8080"
+    static let domain:String = "http://192.168.1.4:8080"
 
 }

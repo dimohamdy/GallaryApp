@@ -7,14 +7,13 @@
 //
 
 import UIKit
-import Kingfisher
 
 class PhotoCollectionViewCell: UICollectionViewCell,ReusableCellView {
    
     
     func configureCellWith(photo:Photo) {
-        let url = URL(string:API.domain + photo.imagePath!)!
-        imageView.kf.setImage(with: url)
+         let url = API.domain + (photo.imagePath ?? "")
+            imageView.setImageWith(url)        
     }
     
     @IBOutlet weak var imageView: UIImageView!

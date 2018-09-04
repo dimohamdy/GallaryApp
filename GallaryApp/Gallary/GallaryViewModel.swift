@@ -9,7 +9,7 @@
 import RxSwift
 import RxCocoa
 
-class GallaryViewModel {
+class GallaryViewModel : BaseViewModel {
 
     // input
     var photosRX  : BehaviorRelay<[Photo]> = BehaviorRelay(value: [])
@@ -18,15 +18,32 @@ class GallaryViewModel {
 
     // internal
 
-    init() {
+    override init() {
+        super.init()
+        setupRx()
+        getImages()
+    }
+    func getImages(){
         ServerManager().getPhotos { photosArray in
-           // print(photos?.count)
+            // print(photos?.count)
             guard let photos = photosArray else{
                 return
             }
             self.photosRX.accept(photos)
         }
-        setupRx()
+    }
+    
+    func upload(image:UIImage) {
+        self.loading.accept(true)
+        ServerManager().upload(image: image) { [weak self] photoObj in
+            self?.loading.accept(false)
+            guard let photo = photoObj else{
+                return
+            }
+            var photos = self!.photosRX.value 
+            photos.append(photo)
+            self?.photosRX.accept(photos)
+        }
     }
 }
 
@@ -36,4 +53,7 @@ private extension GallaryViewModel {
     func setupRx() {
 
     }
+    
+    
+
 }
