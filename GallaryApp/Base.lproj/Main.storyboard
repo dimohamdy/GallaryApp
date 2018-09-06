@@ -68,6 +68,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="cdP-2A-TSU" firstAttribute="trailing" secondItem="qOO-oQ-i9V" secondAttribute="trailing" constant="10" id="B6N-4b-YAq"/>
                             <constraint firstItem="cdP-2A-TSU" firstAttribute="bottom" secondItem="qOO-oQ-i9V" secondAttribute="bottom" id="aeg-Gz-iEQ"/>

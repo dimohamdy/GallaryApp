@@ -10,12 +10,13 @@ import UIKit
 import RxSwift
 import RxCocoa
 import ALCameraViewController
+import SimpleImageViewer
 
 class GallaryViewController: BaseViewController {
     fileprivate var viewModel: GallaryViewModel?
     fileprivate var router: GallaryRouter?
     fileprivate let disposeBag = DisposeBag()
-
+    
     var libraryEnabled: Bool = true
     var croppingEnabled: Bool = false
     var allowResizing: Bool = true
@@ -32,23 +33,21 @@ class GallaryViewController: BaseViewController {
         self.router = router
         super.init(nibName: nil, bundle: nil)
     }
-
+    
     required init?(coder aDecoder: NSCoder) {
         //fatalError("init(coder:) has not been implemented")
         super.init(coder: aDecoder)
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel = GallaryViewModel()
-
         setupViews()
         setupLayout()
         setupRx()
     }
     @IBAction func openLib(_ sender: UIBarButtonItem) {
         let libraryViewController = CameraViewController.imagePickerViewController(croppingParameters: croppingParameters) { [weak self] image, asset in
-            //self?.imageView.image = image
             if let uploadedImage =  image{
                 self?.upload(image: uploadedImage)
             }
@@ -75,28 +74,44 @@ class GallaryViewController: BaseViewController {
 
 // MARK: Setup
 private extension GallaryViewController {
-
+    
     func setupViews() {
         photoCollectionView.addSubview(activity)
-
-        photoCollectionView?.delegate = nil
-        photoCollectionView?.rx.setDelegate(self).disposed(by: disposeBag)
-    viewModel?.photosRX.asObservable().share().bind(to: photoCollectionView!.rx.items(cellIdentifier: PhotoCollectionViewCell.id, cellType: PhotoCollectionViewCell.self)) { row, cellData, cell in
+        
+        photoCollectionView.delegate = nil
+        
+        photoCollectionView.rx.setDelegate(self).disposed(by: disposeBag)
+        
+        viewModel?.photosRX.asObservable().skip(0).bind(to: photoCollectionView!.rx.items(cellIdentifier: PhotoCollectionViewCell.id, cellType: PhotoCollectionViewCell.self)) { row, cellData, cell in
             
-        cell.configureCellWith(photo: cellData)
-        
+            cell.configureCellWith(photo: cellData)
+            
             }.disposed(by: disposeBag)
+        
+        
         viewModel?.loading.asObservable().bind(to: activity.rx_animating).disposed(by: disposeBag)
-
+        
+        photoCollectionView.rx.itemSelected
+            .subscribe(onNext: { [weak self] indexPath in
+                let cell = self?.photoCollectionView.cellForItem(at: indexPath) as! PhotoCollectionViewCell
+                
+                let configuration = ImageViewerConfiguration { config in
+                    config.imageView = cell.imageView
+                }
+                
+                self?.present(ImageViewerController(configuration: configuration), animated: true)
+                
+            }).disposed(by: disposeBag)
+        
         
     }
-
+    
     func setupLayout() {
-    
+        
     }
-
-    func setupRx() {
     
+    func setupRx() {
+        
     }
 }
 

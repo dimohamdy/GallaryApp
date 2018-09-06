@@ -7,7 +7,25 @@
 		<key>GallaryApp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>16</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>3DC4EF79213B90C300708E2D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3DC4EF8D213B90C500708E2D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3DC4EF98213B90C500708E2D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
