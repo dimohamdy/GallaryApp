@@ -12,9 +12,9 @@ import RxCocoa
 class GallaryViewModel : BaseViewModel {
 
     // input
-    var photosRX  : BehaviorRelay<[Photo]> = BehaviorRelay(value: [])
 
     // output
+    var photosRX  : BehaviorRelay<[Photo]> = BehaviorRelay(value: [])
 
     // internal
 
@@ -24,11 +24,13 @@ class GallaryViewModel : BaseViewModel {
         getImages()
     }
     func getImages(){
+        self.loading.accept(true)
         ServerManager.getPhotos { photosArray in
             // print(photos?.count)
             guard let photos = photosArray else{
                 return
             }
+            self.loading.accept(false)
             self.photosRX.accept(photos)
         }
     }
@@ -36,13 +38,13 @@ class GallaryViewModel : BaseViewModel {
     func upload(image:UIImage) {
         self.loading.accept(true)
         ServerManager.upload(image: image) { [weak self] photoObj in
-            self?.loading.accept(false)
             guard let photo = photoObj else{
                 return
             }
             var photos = self!.photosRX.value 
             photos.append(photo)
             self?.photosRX.accept(photos)
+            self?.loading.accept(false)
         }
     }
 }

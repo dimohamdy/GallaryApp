@@ -10,21 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Base View Controller-->
-        <scene sceneID="m2P-CI-pHh">
-            <objects>
-                <viewController id="dbe-7S-ARX" customClass="BaseViewController" customModule="GallaryApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cdh-QK-Af7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="tH7-0D-pg8"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TA9-kh-co8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-80" y="914"/>
-        </scene>
         <!--Gallary View Controller-->
         <scene sceneID="c95-ak-zDw">
             <objects>
@@ -33,6 +18,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r1o-Au-XNn">
+                                <rect key="frame" x="63" y="349" width="248" height="33"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="No data to show Tap to refresh">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="LucidaGrande"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="refreshData:" destination="y8w-Dh-w3L" eventType="touchUpInside" id="JxX-28-5UH"/>
+                                </connections>
+                            </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qOO-oQ-i9V">
                                 <rect key="frame" x="10" y="64" width="355" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -71,7 +71,9 @@
                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="cdP-2A-TSU" firstAttribute="trailing" secondItem="qOO-oQ-i9V" secondAttribute="trailing" constant="10" id="B6N-4b-YAq"/>
+                            <constraint firstItem="r1o-Au-XNn" firstAttribute="centerX" secondItem="cdP-2A-TSU" secondAttribute="centerX" id="CbZ-a7-eCQ"/>
                             <constraint firstItem="cdP-2A-TSU" firstAttribute="bottom" secondItem="qOO-oQ-i9V" secondAttribute="bottom" id="aeg-Gz-iEQ"/>
+                            <constraint firstItem="r1o-Au-XNn" firstAttribute="centerY" secondItem="cdP-2A-TSU" secondAttribute="centerY" id="c6R-Zd-W20"/>
                             <constraint firstItem="qOO-oQ-i9V" firstAttribute="top" secondItem="cdP-2A-TSU" secondAttribute="top" id="ojm-mH-xT7"/>
                             <constraint firstItem="qOO-oQ-i9V" firstAttribute="centerX" secondItem="LaM-Hh-dFE" secondAttribute="centerX" id="wHa-NI-a1g"/>
                         </constraints>

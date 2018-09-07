@@ -67,6 +67,9 @@ class GallaryViewController: BaseViewController {
         present(cameraViewController, animated: true, completion: nil)
     }
     
+    @IBAction func refreshData(_ sender: UIButton) {
+      viewModel?.getImages()
+    }
     func upload(image:UIImage) {
         self.viewModel?.upload(image: image)
     }
@@ -81,7 +84,9 @@ private extension GallaryViewController {
         photoCollectionView.delegate = nil
         
         photoCollectionView.rx.setDelegate(self).disposed(by: disposeBag)
-        
+        viewModel?.photosRX.asObservable().map({ (photos) -> Bool in
+            return photos.count <= 0
+        }).asObservable().bind(to: photoCollectionView.rx.isHidden).disposed(by: disposeBag)
         viewModel?.photosRX.asObservable().skip(0).bind(to: photoCollectionView!.rx.items(cellIdentifier: PhotoCollectionViewCell.id, cellType: PhotoCollectionViewCell.self)) { row, cellData, cell in
             
             cell.configureCellWith(photo: cellData)
@@ -89,7 +94,10 @@ private extension GallaryViewController {
             }.disposed(by: disposeBag)
         
         
-        viewModel?.loading.asObservable().bind(to: activity.rx_animating).disposed(by: disposeBag)
+        viewModel?.loading.asObservable().share().bind(to: activity.rx_animating).disposed(by: disposeBag)
+        
+//        viewModel?.loading.asObservable().share().bind(to: photoCollectionView.rx.isHidden).disposed(by: disposeBag)
+
         
         photoCollectionView.rx.itemSelected
             .subscribe(onNext: { [weak self] indexPath in
