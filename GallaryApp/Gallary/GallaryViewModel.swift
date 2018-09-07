@@ -24,7 +24,7 @@ class GallaryViewModel : BaseViewModel {
         getImages()
     }
     func getImages(){
-        ServerManager().getPhotos { photosArray in
+        ServerManager.getPhotos { photosArray in
             // print(photos?.count)
             guard let photos = photosArray else{
                 return
@@ -35,7 +35,7 @@ class GallaryViewModel : BaseViewModel {
     
     func upload(image:UIImage) {
         self.loading.accept(true)
-        ServerManager().upload(image: image) { [weak self] photoObj in
+        ServerManager.upload(image: image) { [weak self] photoObj in
             self?.loading.accept(false)
             guard let photo = photoObj else{
                 return

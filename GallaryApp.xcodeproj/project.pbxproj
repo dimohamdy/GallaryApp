@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D022227213F14A3005C63E4 /* ServerManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D022226213F14A3005C63E4 /* ServerManagerTest.swift */; };
+		3DC2D6882141CC51006D78A4 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC2D6872141CC51006D78A4 /* Banner.swift */; };
 		3DC4EF7E213B90C300708E2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4EF7D213B90C300708E2D /* AppDelegate.swift */; };
 		3DC4EF83213B90C300708E2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC4EF81213B90C300708E2D /* Main.storyboard */; };
 		3DC4EF85213B90C500708E2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC4EF84213B90C500708E2D /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		37EC55193C901C0D6E3639EB /* Pods-GallaryAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GallaryAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GallaryAppTests/Pods-GallaryAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3D022226213F14A3005C63E4 /* ServerManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManagerTest.swift; sourceTree = "<group>"; };
+		3DC2D6872141CC51006D78A4 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		3DC4EF7A213B90C300708E2D /* GallaryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GallaryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC4EF7D213B90C300708E2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DC4EF82213B90C300708E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -153,6 +155,14 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		3DC2D6862141CC37006D78A4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3DC2D6872141CC51006D78A4 /* Banner.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		3DC4EF71213B90C300708E2D = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +188,7 @@
 		3DC4EF7C213B90C300708E2D /* GallaryApp */ = {
 			isa = PBXGroup;
 			children = (
+				3DC2D6862141CC37006D78A4 /* Helper */,
 				3D022224213F10A2005C63E4 /* NetworkManager */,
 				3D022223213F1040005C63E4 /* Extension */,
 				3D022225213F10BF005C63E4 /* Base */,
@@ -440,6 +451,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SimpleImageViewer/SimpleImageViewer.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -450,6 +462,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleImageViewer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -474,6 +487,7 @@
 				3DC4EFCD213C0CB900708E2D /* GallaryViewController.swift in Sources */,
 				3DC4EFE7213EE81B00708E2D /* UIImageViewExtension.swift in Sources */,
 				3DC4EFCA213C0CB900708E2D /* GallaryRouter.swift in Sources */,
+				3DC2D6882141CC51006D78A4 /* Banner.swift in Sources */,
 				3DC4EF7E213B90C300708E2D /* AppDelegate.swift in Sources */,
 				3DC4EFD8213D04DD00708E2D /* ServerManager.swift in Sources */,
 			);

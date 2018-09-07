@@ -9,8 +9,31 @@
 import Alamofire
 
 class ServerManager {
+    static let reachabilityManager = Alamofire.NetworkReachabilityManager(host: "www.google.com")
 
-    func getPhotos(completion:@escaping ([Photo]?) -> Void){
+    static func startNetworkReachabilityObserver() {
+        
+        reachabilityManager?.listener = { status in
+            switch status {
+            case .notReachable:
+                print("⚠ The network is not reachable")
+                Banner.shared.showAlert("⚠ The network is not reachable")
+            case .unknown :
+                print("It is unknown whether the network is reachable")
+            case .reachable(.ethernetOrWiFi):
+                print("The network is reachable over the WiFi connection")
+                fallthrough
+            case .reachable(.wwan):
+                print("The network is reachable over the WWAN connection")
+                Banner.shared.hide(bannerType: .internet)
+            }
+        }
+        
+        // start listening
+        reachabilityManager?.startListening()
+    }
+    
+    static func getPhotos(completion:@escaping ([Photo]?) -> Void){
         Alamofire.request(API.files.url)
             .responseJSON { response in
                 //debugPrint(response)
@@ -29,7 +52,7 @@ class ServerManager {
                 
         }
     }
-    func upload(image:UIImage,completion:@escaping (Photo?) -> Void){
+    static func upload(image:UIImage,completion:@escaping (Photo?) -> Void){
         let url = URL(string: API.upload.url)  /* your API url */
             
             let headers: HTTPHeaders = [

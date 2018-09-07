@@ -14,6 +14,7 @@ target 'GallaryApp' do
   pod 'NVActivityIndicatorView'
   pod 'AlamofireImage'
 pod 'SimpleImageViewer', '~> 1.1.1'
+pod 'SwiftMessages'
 
 end
 
