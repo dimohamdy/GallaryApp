@@ -16,15 +16,15 @@ class ServerManager {
         reachabilityManager?.listener = { status in
             switch status {
             case .notReachable:
-                print("⚠ The network is not reachable")
+                //print("⚠ The network is not reachable")
                 Banner.shared.showAlert("⚠ The network is not reachable")
-            case .unknown :
-                print("It is unknown whether the network is reachable")
+            case .unknown : break
+                //print("It is unknown whether the network is reachable")
             case .reachable(.ethernetOrWiFi):
-                print("The network is reachable over the WiFi connection")
+                //print("The network is reachable over the WiFi connection")
                 fallthrough
             case .reachable(.wwan):
-                print("The network is reachable over the WWAN connection")
+                //print("The network is reachable over the WWAN connection")
                 Banner.shared.hide(bannerType: .internet)
             }
         }
