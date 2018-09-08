@@ -16,6 +16,6 @@ enum API : String {
         return API.domain + self.rawValue
     }
     //FIXME:Please change ip address of the server
-    static let domain:String = "http://192.168.1.3:8080"
+    static let domain:String = "https://gallaryspark.herokuapp.com"
 
 }
