@@ -23,6 +23,7 @@ class GallaryViewModel : BaseViewModel {
         setupRx()
         getImages()
     }
+    
     func getImages(){
         self.loading.accept(true)
         ServerManager.getPhotos { photosArray in

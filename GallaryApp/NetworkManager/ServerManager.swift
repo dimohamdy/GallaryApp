@@ -72,7 +72,6 @@ class ServerManager {
                 case .success(let upload, _, _):
                     upload.responseJSON { response in
                         print("Succesfully uploaded")
-      print(response.description)
                         guard let data = response.data else { return }
                         let backToString = String(data: data, encoding: String.Encoding.utf8)
                         print(backToString ?? "backToString")

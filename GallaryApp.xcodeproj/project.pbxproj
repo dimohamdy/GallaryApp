@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3D022227213F14A3005C63E4 /* ServerManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D022226213F14A3005C63E4 /* ServerManagerTest.swift */; };
+		3D721EAE2145C47600F09140 /* StoryboaedExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D721EAD2145C47600F09140 /* StoryboaedExtension.swift */; };
 		3DC2D6882141CC51006D78A4 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC2D6872141CC51006D78A4 /* Banner.swift */; };
 		3DC4EF7E213B90C300708E2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4EF7D213B90C300708E2D /* AppDelegate.swift */; };
-		3DC4EF83213B90C300708E2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC4EF81213B90C300708E2D /* Main.storyboard */; };
+		3DC4EF83213B90C300708E2D /* Gallary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC4EF81213B90C300708E2D /* Gallary.storyboard */; };
 		3DC4EF85213B90C500708E2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC4EF84213B90C500708E2D /* Assets.xcassets */; };
 		3DC4EF88213B90C500708E2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC4EF86213B90C500708E2D /* LaunchScreen.storyboard */; };
 		3DC4EF93213B90C500708E2D /* GallaryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4EF92213B90C500708E2D /* GallaryAppTests.swift */; };
@@ -52,10 +53,11 @@
 /* Begin PBXFileReference section */
 		37EC55193C901C0D6E3639EB /* Pods-GallaryAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GallaryAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GallaryAppTests/Pods-GallaryAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3D022226213F14A3005C63E4 /* ServerManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManagerTest.swift; sourceTree = "<group>"; };
+		3D721EAD2145C47600F09140 /* StoryboaedExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboaedExtension.swift; sourceTree = "<group>"; };
 		3DC2D6872141CC51006D78A4 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		3DC4EF7A213B90C300708E2D /* GallaryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GallaryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC4EF7D213B90C300708E2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DC4EF82213B90C300708E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DC4EF82213B90C300708E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Gallary.storyboard; sourceTree = "<group>"; };
 		3DC4EF84213B90C500708E2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DC4EF87213B90C500708E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DC4EF89213B90C500708E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			children = (
 				3DC4EFDE213D8DA000708E2D /* Cell+Identfier.swift */,
 				3DC4EFE6213EE81B00708E2D /* UIImageViewExtension.swift */,
+				3D721EAD2145C47600F09140 /* StoryboaedExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -195,7 +198,7 @@
 				3DC4EFD9213D05B500708E2D /* Models */,
 				3DC4EFC1213C0CB800708E2D /* Gallary */,
 				3DC4EF7D213B90C300708E2D /* AppDelegate.swift */,
-				3DC4EF81213B90C300708E2D /* Main.storyboard */,
+				3DC4EF81213B90C300708E2D /* Gallary.storyboard */,
 				3DC4EF84213B90C500708E2D /* Assets.xcassets */,
 				3DC4EF86213B90C500708E2D /* LaunchScreen.storyboard */,
 				3DC4EF89213B90C500708E2D /* Info.plist */,
@@ -362,7 +365,7 @@
 			files = (
 				3DC4EF88213B90C500708E2D /* LaunchScreen.storyboard in Resources */,
 				3DC4EF85213B90C500708E2D /* Assets.xcassets in Resources */,
-				3DC4EF83213B90C300708E2D /* Main.storyboard in Resources */,
+				3DC4EF83213B90C300708E2D /* Gallary.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +450,7 @@
 				"${BUILT_PRODUCTS_DIR}/ALCameraViewController/ALCameraViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -458,6 +462,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ALCameraViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -485,6 +490,7 @@
 				3DC4EFE5213EE73100708E2D /* BaseViewController.swift in Sources */,
 				3DC4EFCC213C0CB900708E2D /* GallaryBuilder.swift in Sources */,
 				3DC4EFCD213C0CB900708E2D /* GallaryViewController.swift in Sources */,
+				3D721EAE2145C47600F09140 /* StoryboaedExtension.swift in Sources */,
 				3DC4EFE7213EE81B00708E2D /* UIImageViewExtension.swift in Sources */,
 				3DC4EFCA213C0CB900708E2D /* GallaryRouter.swift in Sources */,
 				3DC2D6882141CC51006D78A4 /* Banner.swift in Sources */,
@@ -526,12 +532,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3DC4EF81213B90C300708E2D /* Main.storyboard */ = {
+		3DC4EF81213B90C300708E2D /* Gallary.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3DC4EF82213B90C300708E2D /* Base */,
 			);
-			name = Main.storyboard;
+			name = Gallary.storyboard;
 			sourceTree = "<group>";
 		};
 		3DC4EF86213B90C500708E2D /* LaunchScreen.storyboard */ = {
