@@ -15,6 +15,6 @@ extension UIImageView {
         guard let url = URL(string:path!) else {
             return
         }
-        self.af_setImage(withURL: url, placeholderImage: nil, filter: nil, progress: nil, progressQueue: DispatchQueue.main, imageTransition: UIImageView.ImageTransition.crossDissolve(0.25), runImageTransitionIfCached: false) {completion?($0.result.value)}
+        self.af_setImage(withURL: url, placeholderImage: #imageLiteral(resourceName: "spark"), filter: nil, progress: nil, progressQueue: DispatchQueue.main, imageTransition: UIImageView.ImageTransition.crossDissolve(0.25), runImageTransitionIfCached: false) {completion?($0.result.value)}
     }
 }
