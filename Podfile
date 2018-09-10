@@ -15,6 +15,7 @@ target 'GallaryApp' do
   pod 'AlamofireImage'
 pod 'SimpleImageViewer', '~> 1.1.1'
 pod 'SwiftMessages'
+pod 'AlamofireNetworkActivityIndicator'
 
 end
 

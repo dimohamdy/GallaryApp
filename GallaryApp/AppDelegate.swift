@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import AlamofireNetworkActivityIndicator
+import AlamofireNetworkActivityIndicator
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,7 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         ServerManager.startNetworkReachabilityObserver()
-    
+        
+        NetworkActivityIndicatorManager.shared.isEnabled = true
+        
 
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = GallaryBuilder.navigationController()
