@@ -12,8 +12,10 @@ class PhotoCollectionViewCell: UICollectionViewCell,ReusableCellView {
    
     
     func configureCellWith(photo:Photo) {
-         let url = API.domain + (photo.imagePath ?? "")
-            imageView.setImageWith(url)        
+        guard let path = photo.imagePath  else {
+            return
+        }
+        imageView.setImageWith(path)
     }
     
     @IBOutlet weak var imageView: UIImageView!
